@@ -1,8 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
 ## MakeCacheMatrix function stores the Functions
-
-## Write a short comment describing this function
+## Creates a matrix object which can cache its inverse using Solve function
 ## Convert the Matrix to a list Using as.list and store it in x
 ## Restore the value of M to Null so that old value can be replaced
 
@@ -20,10 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 		getsolve = getsolve)
 }
 
-
-## Write a short comment describing this function
-## CacheSolve functions is where MakeCacheMatrix is stored
-## First checks if M value is present, if present provides it else calculates it
+## cacheSolve function computes the inverse of the matrix returned by makeCacheMatrix 
+## First checks if M value is already present, if present provides it value else calculates it
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
